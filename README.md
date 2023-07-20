@@ -33,4 +33,31 @@ carried out for 3 seconds along with a 3 seconds pause gap in between gestures (
 dataset consisted of 11 columns, with the first column representing time in milliseconds (ms), followed 
 by columns 2-8 representing the channels (EMG channels of MYO Thalmic armband), column 10 
 denoting label of gestures, and lastly, the label column referring to the subject who took over the 
-gesture
+gesture.
+
+
+## Machine Learning-Based Classification:
+
+We settled on 4 different supervised ML classifiers that could perform well in terms of gesture 
+classification. The Support-vector machine, k-nearest Neighbours Algorithm, Decision Tree, and 
+Random Forest. These classifiers were preferred for comparison, based on several performance metrics 
+such as accuracy, and precision.
+
+SVM is one of the algorithms that is frequently preferred for classification use, such as body 
+movements, images, texts and handwriting, time series, and medical predictions. (Toledo-Perez et al., 
+2019). It is a branch of supervised learning algorithms, that helps in minimizing structural risk and 
+includes statistical learning theories (SENTURK & BAKAY, 2021). SVM mainly works by finding an 
+optimal hyperplane that is separated into a highly-dimensional feature space. (Kaczmarek et al., 2019) 
+This can be achieved by mapping entries using non-linear functions. This allows SVM to effectively 
+differentiate between two or more types of objects. Also, SVM offers several Kernels that are 
+exponential, radial, and polynomial functions. Its ability to handle non-linear functions through Kernel 
+functions makes it easy to capture complex patterns in EMG data. For EMG hand gesture 
+classification, polynomial is one suitable function used as Kernel.
+
+k-NN is also a supervised learning algorithm that is widely used for classification and 
+regression functions. It functions based on the principle of similarity where neighbours have 
+contributions based on their distance. The most essential parameter stands to be the k, which holds the 
+value of the number of neighbours (SENTURK & BAKAY, 2021). Its mechanism revolves around 
+calculating the distance between the test sample and the training sample and then choosing the knearest training samples to the test samples, then finally classifying them into the class with the highest probability (AlOmari & Liu, 2014). It is common to find k-NN algorithms in the fields of pattern recognition, recommendation systems, anomaly detection, and image and text classification. Lastly, KNN provides a fluent non-parametric process for assigning class labels to input patterns based on the 
+class labels represented by the k (Rasheed et al., 2006).
+
