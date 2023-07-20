@@ -61,3 +61,22 @@ value of the number of neighbours (SENTURK & BAKAY, 2021). Its mechanism revolve
 calculating the distance between the test sample and the training sample and then choosing the knearest training samples to the test samples, then finally classifying them into the class with the highest probability (AlOmari & Liu, 2014). It is common to find k-NN algorithms in the fields of pattern recognition, recommendation systems, anomaly detection, and image and text classification. Lastly, KNN provides a fluent non-parametric process for assigning class labels to input patterns based on the 
 class labels represented by the k (Rasheed et al., 2006).
 
+
+DT defines a supervised learning algorithm that works by taking an input, a table for example 
+and recursively dividing the table into sub-tables and so improving the purity score of the column 
+“label” in each partition. Therefore, the more the proportion of one class, the purer the collection stands 
+to be (Yeturu, 2020). DT is constantly used to classify biomedical signals; the instances get sorted from 
+the root to some leaf node, and the attributes of the instances get tested and directed to a sub-node, each 
+branch denotes an outcome of the test, and each leaf holds a class label (Keleş & Subaşı, n.d). After 
+checking all attributes and their values, the target values of the new instance can be defined. DT 
+provides further advantages such as requiring minimal data preparation and strong performance even 
+on big datasets (Kraslawski & Turunen, 2013).
+
+RF is a classification technique that can be described as an ensemble of decision trees (Zhou et 
+al., 2019). Whereas decision trees tend to know how to classify a given instance of data, random forests 
+tend to bootstrap and choose the best prediction. Meaning that each tree in the random forest generates 
+a class prediction, and the class that wins with the highest number of “votes” happens to become our 
+model’s prediction (Kundu, 2021). Using random forests, trees protect each other from pursuing 
+individual mistakes, although some trees are incorrect, many turn out right, therefore as a group, the 
+trees are headed to move in the right direction. For this specific reason, uncorrelated models can 
+conduct more accurate ensemble prediction, than any other individual prediction (Kundu, 2021). 
