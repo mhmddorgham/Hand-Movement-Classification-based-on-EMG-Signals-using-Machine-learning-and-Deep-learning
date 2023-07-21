@@ -118,3 +118,30 @@ movements into different categories, such as grasping, pointing, or pinching(W. 
 Zhang, E. Ip, D. C. Kilper, Y. Aono, and T. Tajima). ANNs can also be used to classify EMG signals in 
 real-time, allowing for the control of prosthetic devices or human-computer interfaces in a seamless 
 and natural way.
+
+## Work Implementation for Machine Learning
+## Preprocessing:
+Preprocessing stands to be a very crucial step in data processing, it is significant because it 
+allows us to focus on our study and its desired outcome. Neglecting the preprocessing stage misguides 
+the analysis from succeeding and achieving its main objective. Preprocessing is the process of 
+transforming raw data into enhanced usable data that is clean, relevant, and structured (Chitanand, 
+2023). During preprocessing, we reduce the dimensions, filter irrelevant and unneeded data, and 
+therefore increase the efficiency of the models. During the preprocessing phase, one important step is 
+data cleaning. In our EMG signal classification dataset, we started by filtering out unnecessary data. 
+Specifically, we dropped two classes from the main dataset, classes 0 & 7. Class 0 denoted unmarked 
+data (unclassified data) which mostly consisted of unnecessary gestures captured inaccurately in 
+between. Similarly, class 7 seemed to be insufficient to be added to the database because of its 
+significantly lower occurrences compared to other classes, whereas not all subjects performed this 
+gesture. Thus, we decided to exclude them from our models. Luckily our dataset lacked NULL values 
+that can propose inconsistencies and misleading errors.
+19
+## Used Features:
+Features in AI approaches are divided into 2 main features:
+a) Frequency-domain features
+b) Time-domain features
+Frequency-domain features revolve around taking fast Fourier transform, power-spectral 
+density, autoregressive functions, and other techniques (Bhatti, 2019). Frequency-domain features are 
+not considered in our study, since signals are usually sampled in time-series.
+Time-domain features are well-studied by researchers in the medical and engineering 
+communities. (Toledo-Perez et al., 2019). They include many techniques such as the Mean Absolute 
+Value (MAV), Standard Deviation (SD), Variance (VA), and Root Mean Square (RMS), etc.
