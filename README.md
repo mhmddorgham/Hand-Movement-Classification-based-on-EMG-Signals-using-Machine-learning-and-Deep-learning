@@ -145,3 +145,17 @@ not considered in our study, since signals are usually sampled in time-series.
 Time-domain features are well-studied by researchers in the medical and engineering 
 communities. (Toledo-Perez et al., 2019). They include many techniques such as the Mean Absolute 
 Value (MAV), Standard Deviation (SD), Variance (VA), and Root Mean Square (RMS), etc.
+
+## Feature Extraction:
+Feature extraction is a technique that enables us to apply functions that take features of the 
+EMG signals. The EMG signals are represented in time, that’s why our extracted features are timedomain represented by RMS, SSI, Absolute differential signals, Minimum (MIN), and Maximum 
+(MAX). These features are analysed for each gesture.
+RMS:
+Root Mean Square is a common signal processing feature especially when amplitudes might 
+vary. RMS represents the square root of the average magnitude of the EMG signal’s strength. RMS 
+enables comparison between signals. It works by finding the square of each value in the dataset, then 
+taking the mean of the squared values, and lastly taking the square root of the mean obtained. It can be 
+expressed as the following:
+![image](https://github.com/mhmddorgham/Hand-Movement-Classification-based-on-EMG-Signals-using-Machine-learning-and-Deep-learning/assets/107323201/704d5454-1373-46ba-baff-c7733fee2135)
+
+
