@@ -156,6 +156,8 @@ vary. RMS represents the square root of the average magnitude of the EMG signalâ
 enables comparison between signals. It works by finding the square of each value in the dataset, then 
 taking the mean of the squared values, and lastly taking the square root of the mean obtained. It can be 
 expressed as the following:
+
+<br/>
 ![image](https://github.com/mhmddorgham/Hand-Movement-Classification-based-on-EMG-Signals-using-Machine-learning-and-Deep-learning/assets/107323201/704d5454-1373-46ba-baff-c7733fee2135)
 
 
